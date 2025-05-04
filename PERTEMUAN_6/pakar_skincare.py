@@ -4,7 +4,7 @@ from pyswip import Prolog
 
 
 prolog = Prolog()
-prolog.consult("skincare_gui.pl")
+prolog.consult("pakar_skincare_gui.pl")
 
 skincare_list = []
 gejala_dict = {}
