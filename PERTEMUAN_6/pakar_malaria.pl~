@@ -1,13 +1,0 @@
-% -- Predikat clear_db/0 untuk membersihkan database gejala.
-clear_db :-
-    retractall(gejala_pos(_)),
-    retractall(gejala_neg(_)).
-% -- Predikat main/0 sebagai main loop sistem pakar.
-main :-
-write('\33\[2J'), % Clear window
-    writeln("DIAGNOSA PENYAKIT THT"),
-    penyakit(_),clear_db,
-    writeln("INGIN MENGULANG?"),
-    read(Jawaban), !,
-    Jawaban == y,
-    main.
