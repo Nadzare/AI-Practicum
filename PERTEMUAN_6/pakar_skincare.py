@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from pyswip import Prolog
 
-
+# Inisialisasi Prolog
 prolog = Prolog()
 prolog.consult("pakar_skincare_gui.pl")
 
@@ -84,16 +84,16 @@ def tampilkan_hasil(skincare=""):
     no_btn.configure(state=tk.DISABLED)
     start_btn.configure(state=tk.NORMAL)
 
-
+# Setup GUI
 root = tk.Tk()
-root.title("Aplikasi Rekomendasi Skincare")
+root.title("Sistem Pakar Rekomendasi Skincare")
 
 mainframe = ttk.Frame(root, padding="10 10 20 20")
 mainframe.grid(column=0, row=0, sticky=(tk.N, tk.W, tk.E, tk.S))
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-ttk.Label(mainframe, text="Aplikasi Rekomendasi Skincare", font=("Arial", 16)).grid(column=0, row=0, columnspan=3)
+ttk.Label(mainframe, text="Sistem Pakar Rekomendasi Skincare", font=("Arial", 16)).grid(column=0, row=0, columnspan=3)
 ttk.Label(mainframe, text="Pertanyaan:").grid(column=0, row=1)
 
 kotak_pertanyaan = tk.Text(mainframe, height=4, width=50, state=tk.DISABLED)

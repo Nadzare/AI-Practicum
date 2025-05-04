@@ -1,4 +1,4 @@
-% REKOMENDASI SKINCARE
+% Basis Pengetahuan Skincare
 :- dynamic gejala_pos/1.
 :- dynamic gejala_neg/1.
 
